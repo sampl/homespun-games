@@ -4,7 +4,6 @@ Website of games that only require common household objects and no screens.
 
 ## To-do
 
-- Add link to add a game (public github repo PR page etc)
 - Filter by age
 - Filter by materials
 
