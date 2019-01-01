@@ -1,0 +1,11 @@
+{
+  "name": "homespun-games",
+  "description": "Website of games that only require common household objects and no screens",
+  "scripts": {
+    "start": "firebase serve",
+    "dev": "  firebase use dev &&   firebase deploy",
+    "stage": "firebase use stage && firebase deploy",
+    "live": " firebase use live &&  firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

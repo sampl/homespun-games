@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "homespun-games-live"
+    "dev": "homespun-games-dev",
+    "stage": "homespun-games-stage",
+    "live": "homespun-games-live"
   }
 }

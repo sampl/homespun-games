@@ -19,3 +19,13 @@ Website of games that only require common household objects and no screens.
 - Uno
 - Polly's quarter random game
 - Dungeons and Dragons
+
+## Usage
+
+Development: `npm start`
+
+Deploying:
+
+- `npm run dev`
+- `npm run stage`
+- `npm run live`
