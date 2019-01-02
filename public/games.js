@@ -21,7 +21,8 @@ const games = [
     ],
   },
   {
-    name: "Fictionary",
+    name: "Dictionary",
+    aka: "Also called Fictionary",
     link: "https://en.wikipedia.org/wiki/Fictionary",
     summary: "Try to guess which word definitions are real, and which were made up by other players",
     ages: "All ages",
@@ -122,9 +123,10 @@ const games = [
     ],
   },
   {
-    name: "Fishbowl",
-    link: "https://icebreakerideas.com/fishbowl-game/",
-    summary: "Write a bunch of words on paper slips. Players draw a word and give hints to their team, first by describing, then acting it out, then describing it with one word.",
+    name: "Celebrity",
+    aka: "Allso called Fishbowl",
+    link: "https://en.wikipedia.org/wiki/Celebrity_(game)",
+    summary: "Players draw a word and try to get their team to guess it. In round one they describe it, round 2 act it out, and round 3 describe it with only one word.",
     ages: "Teens and adults",
     materials: [
       "paper",
