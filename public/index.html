@@ -4,6 +4,16 @@
     <link href="./style.css" rel="stylesheet">
     <title>Homespun games</title>
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10319722-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-10319722-15');
+    </script>
+    
     <!-- block (because we need it before render) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
     <script src="/games.js"></script>
