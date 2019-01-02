@@ -7,7 +7,8 @@ body {
 }
 body {
   max-width: 42rem;
-  padding: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 h1,
@@ -36,6 +37,6 @@ h2 {
 }
 
 footer {
-  margin: 3rem 0 0;
+  margin: 6rem 0 0;
   font-size: 13px;
 }
