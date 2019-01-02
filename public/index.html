@@ -3,6 +3,10 @@
   <head>
     <link href="./style.css" rel="stylesheet">
     <title>Homespun games</title>
+
+    <!-- block (because we need it before render) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <script src="/games.js"></script>
   </head>
   <body>
 
@@ -14,168 +18,17 @@
     
     <p>Perfect for friends and family during parties, travel, or just a quiet evening at home.</p>
     
-    <div class="game-list">
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Exquisite_corpse" target="_blank">Exquisite corpse</a>
-        </h2>
-        <p class="summary">Take turns drawing a part of a picture, but nobody sees the whole drawing until the end.</p>
-        <p class="ages">All ages</p>
+    <div id="game-container">
+      <div class="game-list">
+        <div class="game" v-for="game in games">
+          <h2>
+            <a v-bind:href="game.link" target="_blank">{{ game.name }}</a>
+          </h2>
+          <p class="summary">{{ game.summary }}</p>
+          <p class="ages">{{ game.ages }}</p>
+        </div>
       </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Flip_cup" target="_blank">Flip cup</a>
-        </h2>
-        <p class="summary">Drinking game where the first team to flip all their cups over with just a finger wins.</p>
-        <p class="ages">Adults only</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Pictionary" target="_blank">Pictionary</a>
-        </h2>
-        <p class="summary">Try to get your team to guess a secret word by drawing it</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Fictionary" target="_blank">Fictionary</a>
-        </h2>
-        <p class="summary">Try to guess which word definitions are real, and which were made up by other players</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Hearts" target="_blank">Hearts</a>
-        </h2>
-        <p class="summary">Take turns discarding cards; lowest number of points wins</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Poker" target="_blank">Poker</a>
-        </h2>
-        <p class="summary">Bet against each other to see who has the best hand</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Euchre" target="_blank">Euchre</a>
-        </h2>
-        <p class="summary">Teams of players play cards in "tricks", first team to ten wins</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Rummy" target="_blank">Rummy</a>
-        </h2>
-        <p class="summary">Add and discard cards from a pile, building sets in your hand to score points</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Paper_football" target="_blank">Paper Football</a>
-        </h2>
-        <p class="summary">Flick an origami football across the table. Score points when it hangs over the edge (but doesn't fall off).</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">Tic-tac-toe</a>
-        </h2>
-        <p class="summary">Take turns drawing X's and O's on a grid, trying to get three in a row</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Concentration_(game)" target="_blank">Concentration</a>
-        </h2>
-        <p class="summary">Try to find card pairs by turning them over and remembering which card is where.</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Hangman_(game)" target="_blank">Hangman</a>
-        </h2>
-        <p class="summary">Try to find a secret word by guessing one letter at a time</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Dots_and_Boxes" target="_blank">Dots and Boxes</a>
-        </h2>
-        <p class="summary">Take turns filling in one line on grid paper, trying to ________</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://icebreakerideas.com/fishbowl-game/" target="_blank">Fishbowl</a>
-        </h2>
-        <p class="summary">Write a bunch of words on paper slips. Players draw a word and give hints to their team, first by describing, then acting it out, then describing it with one word.</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="http://www.thecollegesurvivalhandbook.com/2012/02/how-to-play-land-mines-drinking-game.html" target="_blank">Landmines</a>
-        </h2>
-        <p class="summary">Spin a quarter, take a drink, and pick up the quarter with one hand. When you finish a beer, place it on the table to make quarter spinning harder for other players.</p>
-        <p class="ages">Adults only</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Charades" target="_blank">Charades</a>
-        </h2>
-        <p class="summary">Get your teammates to guess a word by silently acting it out</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Telestrations" target="_blank">Telestrations</a>
-        </h2>
-        <p class="summary">The first player writes down a word, the next guesses the word based on the drawing, the next player draws the word, etc</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Mao_(card_game)" target="_blank">Mao</a>
-        </h2>
-        <p class="summary">Card game where players learn the rules as they play</p>
-        <p class="ages">Teens and adults</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Would_you_rather" target="_blank">Would you rather</a>
-        </h2>
-        <p class="summary">Take turns asking each other questions like "would you rather be a duck or a horse"?</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Truth_or_dare%3F" target="_blank">Truth or dare</a>
-        </h2>
-        <p class="summary">Take turns choosing between answering a question honestly or doing a dare that other players choose.</p>
-        <p class="ages">Kids and teens</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/I_spy" target="_blank">I spy</a>
-        </h2>
-        <p class="summary">Pick something in the room. Other players try to guess it asking yes or no questions.</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/wiki/Twenty_Questions" target="_blank">Twenty questions</a>
-        </h2>
-        <p class="summary">Choose an object anywhere in the world. Other players try to guess it asking only yes or no questions.</p>
-        <p class="ages">All ages</p>
-      </div>
-      <div class="game">
-        <h2>
-          <a href="https://en.wikipedia.org/w/index.php?title=Two_Truths_and_a_Lie&redirect=no" target="_blank">Two truths and a lie</a>
-        </h2>
-        <p class="summary">Tell other players two facts about you and one lie; they try to guess the lie.</p>
-        <p class="ages">All ages</p>
-      </div>
+
     </div>
     
     <p>
@@ -194,6 +47,15 @@
       ·
       <a href="https://github.com/sampl/homespun-games" target="_blank">Source</a>
     </footer>
+
+    <script>
+      const gameVue = new Vue({
+        el:  "#game-container",
+        data: {
+          games,
+        },
+      })
+    </script>
 
   </body>
 </html>
