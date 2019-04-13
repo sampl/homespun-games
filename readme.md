@@ -10,7 +10,6 @@ Website of games that only require common household objects and no screens.
 ## To-add
 
 - King's cup
-- Marry fuck kill
 - Desert Island
 - Questions (why do you look like that? why do you ask? is it something I said?)
 - Garbage
@@ -18,6 +17,11 @@ Website of games that only require common household objects and no screens.
 - Uno
 - Polly's quarter random game
 - Dungeons and Dragons
+- https://en.wikipedia.org/wiki/Party_game
+- https://en.wikipedia.org/wiki/Category:Guessing_games
+- https://en.wikipedia.org/wiki/Category:Children%27s_games
+- https://en.wikipedia.org/wiki/Assassin_(game)
+- https://en.wikipedia.org/wiki/List_of_types_of_games
 
 ## Usage
 
