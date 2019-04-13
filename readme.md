@@ -4,8 +4,25 @@ Website of games that only require common household objects and no screens.
 
 ## To-do
 
-- Filter by age
-- Filter by materials
+- Filters - https://codepen.io/blakewatson/pen/xEXApK
+  - by age
+  - by materials
+    - table
+    - paper
+    - pencil
+    - coins
+    - dice
+    - cards
+    - timer
+    - books
+  - by number of players
+- Submission form
+- Add gameplay video links
+- Add ratings
+- Let people edit games
+- Add who likes it
+- Add our own instructions (not wikipedia)
+- Show popularity on map
 
 ## To-add
 
